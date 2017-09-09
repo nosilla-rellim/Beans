@@ -97,6 +97,14 @@ pack <- available.packages()
 pack["ggplot2","Depends"]
 pack["ggplot2", "Imports"]
 
+## graphics
+
+#use to see and set params, may need to use to overwrite margins etc
+par()
+
+#to put back to default, trick - switch machine off (same as end session?)
+dev.off()
+
 ##syntax and basics to remember
 
 # %>% pipes data forward
