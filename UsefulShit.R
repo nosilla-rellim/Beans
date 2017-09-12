@@ -1,5 +1,9 @@
 ##test1 git 
 
+#now testing Git checking in new stuff from work
+#testing
+#testing again
+
 #clear workspace
 rm(list = ls())
 
@@ -105,11 +109,21 @@ par()
 #to put back to default, trick - switch machine off (same as end session?)
 dev.off()
 
-##syntax and basics to remember
+###########################
+#syntax and basics to remember
+############################
 
 # %>% pipes data forward
 
 # %$% pipes variables you just set up forward
 
+#in dplyr pipes, can move column abc to the front:
+
+data <- data %>% 
+  select(abc, everything()) %>%
+  select(-def)
+
 # prediction, predict functions are useful. They take vectors, not dataframes as arguments
+
+
 
